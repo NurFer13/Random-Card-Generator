@@ -1,3 +1,11 @@
+# About this project
+
+Create an algorithm that randomly builds a card on every refresh:
+Every time the website refreshes a new random card needs to show.
+The card must have one of the possible suits: Hearts, Spades, Clubs and Diamonds.
+The card value must be one of the following: 2 to 10, King, Queen, Jack or Ace, (no joker).
+You should generate a random number between 1 and 4 to pick a suit and another random number between 0 and 12 to pick a card number.
+
 # Hello World with Vanilla JS
 
 Start coding a JS/HTML/CSS website in 30 seconds by opening this template in codespaces (coming soon) or [gitpod](https://gitpod.io#https://github.com/4GeeksAcademy/vanillajs-hello.git).
