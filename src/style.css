@@ -5,16 +5,8 @@
   inherits: false;
 }
 
-:root {
-  --card-height: 65vh;
-  --card-width: calc(var(--card-height) / 1.5);
-}
-
 body {
-  min-height: 100vh;
   background: white;
-  display: flex;
-  align-items: center;
   padding-top: 2rem;
   padding-bottom: 2rem;
   box-sizing: border-box;
@@ -22,18 +14,13 @@ body {
 
 .card {
   background: #e9ebf1;
-  width: var(--card-width);
-  height: var(--card-height);
-  padding: 3px;
+  width: 200px;
+  height: 300px;
   border-radius: 6px;
   justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  font-size: 1.5em;
   color: black;
-  cursor: pointer;
   font-family: cursive;
+  margin: 70px;
 }
 
 .num {
@@ -96,15 +83,7 @@ body {
 .card::after {
   position: absolute;
   content: "";
-  top: calc(var(--card-height) / 6);
-  left: 0;
-  right: 0;
   z-index: -1;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
-  transform: scale(0.8);
-  filter: blur(calc(var(--card-height) / 6));
   background-image: linear-gradient(
     var(--rotate),
     #5ddcff,
@@ -126,9 +105,18 @@ body {
 }
 
 a {
-  color: #212534;
-  text-decoration: none;
   font-family: sans-serif;
   font-weight: bold;
   margin-top: 2rem;
+}
+
+.button {
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 10px 25px;
+  white-space: nowrap;
 }
